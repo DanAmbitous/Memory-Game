@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <title>Memory Game</title>
+</head>
+<body>
+  <table id="table-images">
+    <tbody>
+      <tr id="row-1">
+        <td><img src="elephant.png" alt="Image of an elephant" id="elephant-1" class="elephants" width="100px"></td>
+        <td><img src="dog.png" alt="Image of a dog" id="dog-1" class="dogs" width="100px"></td>
+        <td><img src="elephant.png" alt="Image of an elephant" id="elephant-2" class="elephants"  width="100px"></td>
+      </tr>
+      <tr id="row-2">
+        <td><img src="cat.png" alt="Image of cat" id="cat-1" class="cats" width="100px"></td>
+        <td><img src="dog.png" alt="Image of a dog" id="dog-2" class="dogs" width="100px"></td>
+        <td><img src="cat.png" alt="Image of cat" id="cat-2" class="cats" width="100px"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p id="guesses">You've this number of gusses made: 0</p>
+
+  <style>
+    img:hover {
+      cursor: pointer;
+    }
+
+    #table-images {
+      margin: 0 auto;
+    }
+
+    #guesses {
+      text-align: center;
+    }
+  </style>
+
+  <script src="memoryGameApplication.js"></script>
+</body>
+</html>
